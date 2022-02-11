@@ -1,4 +1,5 @@
 import Controller.AlunoController;
+import Controller.DisciplinaController;
 import Model.Aluno;
 import Model.Avaliacao;
 import Model.Disciplina;
@@ -29,6 +30,7 @@ public class Main {
             defaultResponseTransformer(gson::toJson);
 
             new AlunoController();
+            new DisciplinaController();
         } catch (SQLException e){
             e.printStackTrace();
         }

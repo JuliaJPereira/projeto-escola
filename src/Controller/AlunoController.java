@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 
 import static spark.Spark.*;
+
 public class AlunoController {
     private AlunoService _service;
 
