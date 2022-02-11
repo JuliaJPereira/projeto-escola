@@ -16,11 +16,11 @@ public class DisciplinaController {
     public DisciplinaController() throws SQLException{
         _service = new DisciplinaService();
 
-        get("/disciplina", (req,res) -> getAll(req, res));
-        get("/disciplina/:id", (req, res) -> getById(req, res));
-        delete("/disciplina/", (req, res) -> deletar(req, res));
-        post("/disciplina/:id", (req, res) -> create(req, res));
-        put("/disciplina/:id", (req, res) -> update(req, res));
+        get("/disciplina", this::getAll);
+        get("/disciplina/:id", this::getById);
+        delete("/disciplina/", this::deletar);
+        post("/disciplina/:id", this::create);
+        put("/disciplina/:id", this::update);
 
     }
 
